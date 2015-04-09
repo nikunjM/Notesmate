@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.notesmates"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="9"
+            android:targetSdkVersion="17"/>
+     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
+             
+        <activity android:name="StartScreen"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="LoginActivity"
+                  android:label="@string/app_name">
+
+        </activity>
+        
+        <activity android:name="RegActivity"
+                  android:label="@string/app_name">
+
+        </activity>
+
+        <activity android:name="UserVerificationActivity"
+                  android:label="@string/app_name">
+
+        </activity>
+
+
+        <activity android:name="Main"
+                  android:label="NotesMates">
+
+        </activity>
+       
+        <activity android:name="PasswordReset"
+                  android:label="@string/app_name">
+
+        </activity>
+        <activity android:name="ChangePassword"
+                  android:label="@string/app_name">
+
+        </activity>
+		
+		<activity android:name="MainProfile"
+                  android:label="@string/app_name">
+
+        </activity>
+
+				<activity android:name="Select_courses"
+                  android:label="@string/app_name">
+
+        </activity>
+		
+		<activity android:name="com.notesmates.MainActivity"
+                  android:label="@string/app_name">
+
+        </activity>
+         <activity android:name="DropboxDownload" >
+        </activity>
+       
+         <activity android:name="Main_dpbox" >
+        </activity>
+        
+           <activity android:name="Main_dpbox1" >
+        </activity>
+        
+             <activity android:name="com.notesmates.Main_dpbox2" >
+        </activity>
+        
+        <activity
+            android:name="com.dropbox.client2.android.AuthActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <intent-filter>
+
+                <!-- Change this to be db- followed by your app key -->
+                <data android:scheme="db-tujajjv58zelkdm" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    </application>
+     <!-- Allow to connect with internet and to know the current network state-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />   
+
+  
+</manifest>

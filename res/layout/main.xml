@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/notebook_background"
+              android:padding="20dp" 
+              >
+
+    <TextView
+            android:layout_width="200dp"
+            android:textColor="#000000"
+            android:layout_height="50dp"
+            android:id="@+id/textwelcome" 
+            android:textSize="20dp"
+            />
+
+    <TextView
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:id="@+id/lname"
+            android:layout_alignParentTop="true"
+            android:textColor="#000000"
+            android:layout_toRightOf="@+id/textwelcome"
+            android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/seledtcourse"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textwelcome"
+        android:text="Select/Edit Courses"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/seledtcourse"
+        android:layout_below="@+id/seledtcourse"
+        android:text="Logout"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>
